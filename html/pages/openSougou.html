@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script language="JavaScript" src="/webH5JSCSS/js/jquery.min.js"></script>
+</head>
+<body>
+
+
+<script>
+
+    function clock(c)
+    {
+       
+        alert(c);
+    
+    }
+
+
+  $(document).ready(function () {
+       
+    //    alert("hello");
+    // window.open("http://www.baidu.com",'_self');
+
+    var content = window.open("http://www.baidu.com","_blank");
+    //  alert(content.document.form);
+  
+    // var c = JSON.stringify($(content.document));
+
+    var int=self.setInterval("clock("+content+")",3000);
+ 
+
+
+    })
+
+
+</script>
+</body>
+</html>
